@@ -8,8 +8,14 @@ function createWindow () {
   })
   win.maximize()
   win.show()
-  // and load the index.html of the app.
-  win.loadFile("dist/index.html")
+  if (process.env.PRODUCTION) {
+    // and load the index.html of the app.
+    win.loadFile("dist/index.html")
+  } else {
+    // webpack-dev-server defaults to port 8080
+    const port = process.env.PORT || 8080;
+    win.loadURL(`http://localhost:${port}`)
+  }
 }
 
 app.on("ready", createWindow)
