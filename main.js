@@ -8,7 +8,7 @@ function createWindow () {
   })
   win.maximize()
   win.show()
-  if (process.env.PRODUCTION) {
+  if (app.isPackaged || process.env.PRODUCTION) {
     // and load the index.html of the app.
     win.loadFile("dist/index.html")
   } else {

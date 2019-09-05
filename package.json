@@ -13,9 +13,12 @@
   },
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "dev": "webpack-dev-server --mode=development --content-base dist/",
     "build": "webpack --mode=production",
+    "dev": "webpack-dev-server --mode=development --content-base dist/",
+    "package-linux": "electron-packager . 'Hello World' --platform=linux",
+    "package-osx": "electron-packager . 'Hello World' --platform=darwin",
+    "package-windows": "electron-packager . 'Hello World' --platform=win32",
+    "start": "electron .",
     "watch": "webpack --watch --progress --colors --display-modules"
   },
   "repository": {
@@ -24,8 +27,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.3.1",
     "css-loader": "^1.0.1",
+    "electron-packager": "^14.0.5",
     "express": "^4.16.2",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "imba": "1.4.1",

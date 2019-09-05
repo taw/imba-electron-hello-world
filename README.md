@@ -11,6 +11,27 @@ npm install
 ### Run in development mode
 
 ```
-npm run watch
+npm run dev
 npm run start
+```
+
+### Build package (OSX)
+
+```
+npm run build
+npm run package-osx
+```
+
+### Build package (Linux)
+
+```
+npm run build
+npm run package-linux
+```
+
+### Build package (Windows)
+
+```
+npm run build
+npm run package-windows
 ```
