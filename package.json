@@ -37,7 +37,7 @@
     "webpack-dev-server": "^3.7.1"
   },
   "devDependencies": {
-    "electron": "^13.6.6",
+    "electron": "^15.5.5",
     "node-sass": "^7.0.0",
     "sass-loader": "^7.1.0",
     "webpack": "^4.26.0",
