@@ -34,7 +34,7 @@
     "imba": "1.5.2",
     "normalize-scss": "^7.0.1",
     "style-loader": "^0.23.1",
-    "webpack-dev-server": "^3.11.3"
+    "webpack-dev-server": "^4.11.1"
   },
   "devDependencies": {
     "electron": "^18.3.7",
