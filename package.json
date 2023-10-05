@@ -29,7 +29,7 @@
   "dependencies": {
     "css-loader": "^5.2.7",
     "electron-packager": "^17.1.1",
-    "electron": "^22.3.24",
+    "electron": "^22.3.25",
     "imba": "1.5.2",
     "mini-css-extract-plugin": "^1.6.2",
     "node-sass": "^8.0.0",
